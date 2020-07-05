@@ -10,7 +10,7 @@ mirror_doc_tabs=false
 group_toolbar_buttons=true
 spread_progressbar=true
 composite=true
-menu_shadow_depth=7
+menu_shadow_depth=10
 spread_menuitems=true
 tooltip_shadow_depth=6
 scroll_width=12
@@ -79,15 +79,15 @@ mid.color=#3c3c3c
 highlight.color=#a0b4f8
 inactive.highlight.color=#a0b4f8
 text.color=#dedede
-inactive.text.color=#dededeac
+inactive.text.color=#dedede74
 window.text.color=#dedede
-inactive.window.text.color=#dededeac
+inactive.window.text.color=#dedede74
 button.text.color=#dedede
 disabled.text.color=#dedede74
 tooltip.base.color=#333333
 tooltip.text.color=#dedede
-highlight.text.color=#dedede
-inactive.highlight.text.color=#dedede
+highlight.text.color=#333333
+inactive.highlight.text.color=#424242
 link.color=#3484e2
 link.visited.color=#452886
 progress.indicator.text.color=#ffffff
@@ -165,22 +165,34 @@ inherits=PanelButtonCommand
 interior.element=tbutton
 frame=true
 frame.element=tbutton
-frame.top=10
-frame.bottom=10
-frame.left=10
-frame.right=10
+frame.top=6
+frame.bottom=8
+frame.left=6
+frame.right=6
 text.press.color=#464646
 text.toggle.color=#565656
 text.normal.color=#dedede
 text.focus.color=#dedede
 text.normal.inactive.color=#999999
 text.toggle.inactive.color=#aaaaaa
+text.margin.top=0
+text.margin.bottom=0
+text.margin.left=0
+text.margin.right=0
 indicator.element=arrow
 
 [ToolbarLineEdit]
 frame.element=tlineedit
 interior.element=tlineedit
-frame.expansion=20
+frame.top=3
+frame.bottom=3
+frame.left=3
+frame.right=3
+text.margin=0
+text.margin.left=0
+text.margin.right=0
+text.margin.top=0
+text.margin.bottom=0
 
 [Dock]
 inherits=PanelButtonCommand
@@ -268,13 +280,13 @@ text.focus.color=#ffffff
 
 [Tab]
 inherits=PanelButtonCommand
-interior.element=tab
+interior.element=button
 text.margin.left=4
 text.margin.right=4
 text.margin.top=0
 text.margin.bottom=0
 text.normal.color=#dedede
-frame.element=tab
+frame.element=button
 indicator.element=tab
 frame.top=3
 frame.bottom=3
@@ -312,13 +324,16 @@ indicator.element=tree
 
 [HeaderSection]
 inherits=PanelButtonCommand
-interior=true
-interior.element=header
-frame.element=header
-frame.top=0
-frame.bottom=1
-frame.left=1
-frame.right=1
+frame.element=button
+interior.element=button
+frame.top=2
+frame.bottom=2
+frame.left=2
+frame.right=2
+text.margin.top=2
+text.margin.bottom=2
+text.margin.left=2
+text.margin.right=2
 
 [SizeGrip]
 indicator.element=resize-grip
@@ -334,9 +349,9 @@ text.normal.color=#dedede
 text.focus.color=#ffffff
 text.normal.inactive.color=#dedede74
 frame.left=4
-frame.right=0
+frame.right=4
 frame.top=0
-frame.bottom=7
+frame.bottom=8
 frame.expansion=0
 
 [Slider]
@@ -419,8 +434,8 @@ frame=false
 
 [MenuBar]
 inherits=PanelButtonCommand
-frame.element=none
-interior.element=none
+frame.element=menubar
+interior.element=menubar
 frame.expansion=0
 
 [MenuBarItem]
@@ -455,14 +470,13 @@ frame.expansion=0
 
 [Menu]
 inherits=PanelButtonCommand
-frame.top=6
-frame.bottom=6
-frame.left=6
-frame.right=6
+frame.top=3
+frame.bottom=3
+frame.left=3
+frame.right=3
 frame.element=menu
 interior.element=menu
 text.normal.color=#dedede
-frame.expansion=0
 
 [MenuItem]
 inherits=PanelButtonCommand
@@ -476,10 +490,10 @@ text.margin.top=0
 text.margin.bottom=0
 text.margin.left=6
 text.margin.right=6
-frame.top=0
-frame.bottom=0
-frame.left=5
-frame.right=5
+frame.top=3
+frame.bottom=3
+frame.left=10
+frame.right=10
 frame.expansion=0
 
 [ComboBox]
@@ -555,3 +569,7 @@ frame.top=10
 
 [Dialog]
 interior=true
+interior.element=dialog
+
+[Focus]
+frame=false
