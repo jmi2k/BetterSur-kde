@@ -1,6 +1,6 @@
 [%General]
-author=Vince Liuice
-comment=A dark theme with translucency similar to the style of macOS Mojave
+author=Amit Parameshwar
+comment=A RIP-OFF better than the orginial Big Sur
 x11drag=all
 alt_mnemonic=true
 left_tabs=false
@@ -66,28 +66,25 @@ reduce_menu_opacity=0
 
 [GeneralColors]
 window.color=#242424
-inactive.window.color=#242424
+inactive.window.color=#24242474
 base.color=#242424
-inactive.base.color=#1f1f1f
+inactive.base.color=#646464
 alt.base.color=#2d2d2d
 inactive.alt.base.color=#282828
-button.color=#656565
+button.color=#646464
 light.color=#5a5a5a
 mid.light.color=#555555
 dark.color=#202020
 mid.color=#3c3c3c
-highlight.color=#a0b4f8
-inactive.highlight.color=#a0b4f8
+highlight.color=#0860f250
 text.color=#dedede
-inactive.text.color=#dedede74
-window.text.color=#dedede
-inactive.window.text.color=#dedede74
+window.text.color=#ffffff
 button.text.color=#dedede
 disabled.text.color=#dedede74
 tooltip.base.color=#333333
 tooltip.text.color=#dedede
-highlight.text.color=#333333
-inactive.highlight.text.color=#424242
+highlight.text.color=#ffffff
+inactive.highlight.text.color=#ffffff
 link.color=#3484e2
 link.visited.color=#452886
 progress.indicator.text.color=#ffffff
@@ -118,14 +115,14 @@ scroll_jump_workaround=false
 frame=true
 frame.element=button
 frame.top=2
-frame.bottom=2
+frame.bottom=4
 frame.left=3
 frame.right=3
 interior=true
 interior.element=button
 indicator.size=8
 text.normal.color=#dedede
-text.focus.color=#dedede
+text.focus.color=#ffffff
 text.press.color=#ffffff
 text.toggle.color=#ffffff
 text.shadow=false
@@ -169,11 +166,11 @@ frame.top=6
 frame.bottom=8
 frame.left=6
 frame.right=6
-text.press.color=#464646
-text.toggle.color=#565656
 text.normal.color=#dedede
-text.focus.color=#dedede
-text.normal.inactive.color=#999999
+text.press.color=#aaaaaa
+text.toggle.color=#aaaaaa
+text.focus.color=#aaaaaa
+text.normal.inactive.color=#dedede
 text.toggle.inactive.color=#aaaaaa
 text.margin.top=0
 text.margin.bottom=0
@@ -210,6 +207,7 @@ frame=false
 interior=false
 text.normal.color=#dedede
 text.focus.color=#ffffff
+text.normal.inactive.color=#dedede
 text.bold=false
 
 [IndicatorSpinBox]
@@ -230,6 +228,10 @@ frame=false
 interior.element=radio
 text.normal.color=#dedede
 text.focus.color=#ffffff
+text.press.color=#ffffff
+text.toggle.color=#ffffff
+text.normal.inactive.color=#dedede
+text.toggle.inactive.color=#ffffff
 
 [CheckBox]
 inherits=PanelButtonCommand
@@ -237,6 +239,10 @@ frame=false
 interior.element=checkbox
 text.normal.color=#dedede
 text.focus.color=#ffffff
+text.press.color=#ffffff
+text.toggle.color=#ffffff
+text.normal.inactive.color=#dedede
+text.toggle.inactive.color=#ffffff
 
 [GenericFrame]
 inherits=PanelButtonCommand
@@ -277,6 +283,9 @@ inherits=PanelButtonCommand
 text.normal.color=#dedede
 text.press.color=#ffffff
 text.focus.color=#ffffff
+text.toggle.color=#ffffff
+text.normal.inactive.color=#dedede
+text.toggle.inactive.color=#ffffff
 
 [Tab]
 inherits=PanelButtonCommand
@@ -285,7 +294,6 @@ text.margin.left=4
 text.margin.right=4
 text.margin.top=0
 text.margin.bottom=0
-text.normal.color=#dedede
 frame.element=button
 indicator.element=tab
 frame.top=3
@@ -296,10 +304,11 @@ frame.expanded.top=0
 frame.expanded.bottom=0
 frame.expanded.left=0
 frame.expanded.right=0
+text.normal.color=#dedede
 text.focus.color=#ffffff
 text.press.color=#ffffff
 text.toggle.color=#ffffff
-text.toggle.inactive.color=#ffffff74
+text.toggle.inactive.color=#ffffff
 frame.expansion=12
 indicator.size=8
 text.shadow=false
@@ -337,22 +346,6 @@ text.margin.right=2
 
 [SizeGrip]
 indicator.element=resize-grip
-
-[Toolbar]
-inherits=PanelButtonCommand
-indicator.element=toolbar
-indicator.size=10
-text.margin=0
-interior.element=toolbar
-frame.element=toolbar
-text.normal.color=#dedede
-text.focus.color=#ffffff
-text.normal.inactive.color=#dedede74
-frame.left=4
-frame.right=4
-frame.top=0
-frame.bottom=8
-frame.expansion=0
 
 [Slider]
 inherits=PanelButtonCommand
@@ -402,7 +395,7 @@ text.margin.bottom=2
 text.margin.left=4
 text.margin.right=4
 text.normal.color=#dedede
-text.focus.color=#a0b4f8
+text.focus.color=#0860f250
 text.press.color=#333333
 text.toggle.color=#424242
 frame.expansion=6
@@ -453,6 +446,7 @@ text.margin.top=0
 text.margin.bottom=0
 text.normal.color=#dedede
 text.focus.color=#ffffff
+text.normal.inactive.color=#dedede
 text.shadow.alpha=80
 frame.expansion=0
 
@@ -484,6 +478,7 @@ frame=true
 frame.element=menuitem
 interior.element=menuitem
 indicator.element=menuitem
+highlight.text.color=#ffffff
 text.normal.color=#dedede
 text.focus.color=#ffffff
 text.margin.top=0
@@ -516,8 +511,8 @@ frame.right=5
 text.normal.color=#dedede
 text.press.color=#ffffff
 text.focus.color=#ffffff
-text.normal.inactive.color=#dedede74
-text.toggle.inactive.color=#ffffff74
+text.normal.inactive.color=#dedede
+text.toggle.inactive.color=#ffffff
 text.bold=true
 text.boldness=2
 text.shadow=false
